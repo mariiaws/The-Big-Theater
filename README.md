@@ -1,2 +1,2 @@
 # theater
-This page of the bolshoi theater
+This page of the big theater
