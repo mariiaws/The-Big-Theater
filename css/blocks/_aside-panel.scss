@@ -1,0 +1,74 @@
+//Connecting basic settings
+@import "../settings";
+//Variables $
+@import "../variables";
+//Наследование %
+@import "../inherit";
+
+
+
+.aside-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  background: rgba(51, 51, 51, 0.75);
+}
+
+.aside-panel-wrapper {
+  position: absolute;
+  top: 630px;
+  right: -190px;
+  width: 530px;
+  transform: rotate(-90deg);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.social-network {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+
+.social-network-icon {
+  width: 26px;
+  height: 26px;
+  transform: rotate(90deg);
+}
+
+.icon {
+  fill: rgba(255, 255, 255, 0.6);
+  width: 26px;
+  height: 26px;
+
+}
+
+.icon-inst {
+  fill: $gold;
+}
+
+.aside-line {
+  width: 80px;
+  height: 3px;
+  background: $light-grey;
+}
+
+.aside-contacts {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $light-grey;
+
+}
+
+
+
+
+
