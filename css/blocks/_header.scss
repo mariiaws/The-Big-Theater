@@ -5,13 +5,6 @@
 //Наследование %
 @import "../inherit";
 
-.container-picture {
-  width: 100%;
-  height: 1045px;
-  background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") center no-repeat;
-
-}
-
 .header {
   padding-top: 50px;
   font-family: $font-main;
@@ -26,9 +19,15 @@
 }
 
 .container {
-  max-width: 1110px;
-  margin: auto;
+  //max-width: 1110px;
+  //margin: auto;
+
   color: $white;
+}
+
+.header-wrapper{
+  display: flex;
+  justify-content: center;
 }
 
 .nav {
@@ -36,8 +35,9 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  min-width: 1000px;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 

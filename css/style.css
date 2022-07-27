@@ -2,14 +2,18 @@
   box-sizing: border-box;
 }
 
+.container-page {
+  background: rgba(51, 51, 51, 0.85);
+  height: 3000px;
+}
+
 * {
   box-sizing: border-box;
 }
 
-.container-picture {
-  width: 100%;
-  height: 1045px;
-  background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") center no-repeat;
+.container-page {
+  background: rgba(51, 51, 51, 0.85);
+  height: 3000px;
 }
 
 .header {
@@ -25,9 +29,12 @@
 }
 
 .container {
-  max-width: 1110px;
-  margin: auto;
   color: #FFFF;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .nav {
@@ -35,8 +42,9 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  min-width: 1000px;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .nav-item-contacts {
@@ -71,6 +79,11 @@
   box-sizing: border-box;
 }
 
+.container-page {
+  background: rgba(51, 51, 51, 0.85);
+  height: 3000px;
+}
+
 .aside-panel {
   position: fixed;
   top: 0;
@@ -82,8 +95,10 @@
 
 .aside-panel-wrapper {
   position: absolute;
-  top: 630px;
-  right: -190px;
+  top: 50%;
+  left: -130%;
+  right: 0;
+  bottom: 30%;
   width: 530px;
   transform: rotate(-90deg);
   display: flex;
@@ -132,6 +147,50 @@
 
 * {
   box-sizing: border-box;
+}
+
+.container-page {
+  background: rgba(51, 51, 51, 0.85);
+  height: 3000px;
+}
+
+@media (max-width: 1400px) {
+  .nav {
+    min-width: 730px;
+    justify-content: space-around;
+    margin-left: 13%;
+  }
+
+  .nav-item-contacts {
+    flex-basis: 100px;
+  }
+
+  .nav-item-tell {
+    margin: 50px 13% 0 0;
+  }
+}
+@media (max-width: 992px) {
+  .header-wrapper {
+    justify-content: end;
+  }
+
+  .nav {
+    margin: 0;
+    justify-content: end;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .nav-item-tell {
+    margin: 0 13% 0 0;
+  }
+}
+.container-main {
+  width: 100%;
+  height: 1045px;
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") center no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */

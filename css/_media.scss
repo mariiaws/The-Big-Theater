@@ -1,0 +1,40 @@
+//Connecting basic settings
+@import "settings";
+//Variables $
+@import "variables";
+//Наследование %
+@import "inherit";
+
+@media (max-width: 1400px) {
+
+  .nav {
+    min-width: 730px;
+    justify-content: space-around;
+    margin-left: 13%;
+  }
+  .nav-item-contacts {
+    flex-basis: 100px;
+  }
+  .nav-item-tell {
+    margin: 50px 13% 0 0;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .header-wrapper{
+    justify-content: end;
+  }
+
+  .nav{
+    margin: 0;
+    justify-content: end;
+  }
+  .nav-item {
+    display: none;
+  }
+  .nav-item-tell{
+    margin: 0 13% 0 0;
+  }
+}
+

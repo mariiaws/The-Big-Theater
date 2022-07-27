@@ -6,7 +6,6 @@
 @import "../inherit";
 
 
-
 .aside-panel {
   position: fixed;
   top: 0;
@@ -18,8 +17,10 @@
 
 .aside-panel-wrapper {
   position: absolute;
-  top: 630px;
-  right: -190px;
+  top: 50%;
+  left: -130%;
+  right: 0;
+  bottom: 30%;
   width: 530px;
   transform: rotate(-90deg);
   display: flex;
