@@ -1,0 +1,113 @@
+//Connecting basic settings
+@import "../settings";
+//Variables $
+@import "../variables";
+//Наследование %
+@import "../inherit";
+
+.section-main {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+}
+
+
+.about-theater {
+  margin: 390px 125px 0 405px;
+}
+
+.about-theater__text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 87px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about-theater__content {
+  font-family: $font-second;
+  margin-top: 50px;
+  width: 535px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+
+}
+
+.button-poster {
+  margin-top: 50px;
+  width: 160px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: $gold;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.theater-poster {
+  margin-top: 200px;
+}
+
+.img-wrapper {
+  position: relative;
+
+}
+
+
+.img-wrapper__poster {
+  position: relative;
+  width: 350px;
+  height: 490px;
+
+}
+
+.img-background {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 350px;
+  height: 490px;
+  background: linear-gradient(0deg, rgba(209, 169, 84, 0.85), rgba(209, 169, 84, 0.85)), url("../img/poster.jpeg");
+  background-size: 350px 490px;
+}
+
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 0;
+  margin-top: 55px;
+  width: 375px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.arrows__previous, .arrows__next {
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.arrows__previous--light-grey {
+  fill: $light-grey;
+  width: 40px;
+}
+
+.arrows__next--grey {
+  fill: $white;
+  width: 40px;
+}
+

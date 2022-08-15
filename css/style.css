@@ -1,14 +1,24 @@
 * {
   box-sizing: border-box;
+  font-family: "Open Sans Condensed";
+  color: #FFFF;
 }
 
 .container-page {
   background: rgba(51, 51, 51, 0.85);
   height: 3000px;
+}
+
+.container-main {
+  width: 100%;
+  height: 1045px;
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") center no-repeat;
 }
 
 * {
   box-sizing: border-box;
+  font-family: "Open Sans Condensed";
+  color: #FFFF;
 }
 
 .container-page {
@@ -16,9 +26,14 @@
   height: 3000px;
 }
 
+.container-main {
+  width: 100%;
+  height: 1045px;
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") center no-repeat;
+}
+
 .header {
   padding-top: 50px;
-  font-family: "Open Sans Condensed";
   font-size: 18px;
   font-weight: 700;
   line-height: 25px;
@@ -77,11 +92,19 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Open Sans Condensed";
+  color: #FFFF;
 }
 
 .container-page {
   background: rgba(51, 51, 51, 0.85);
   height: 3000px;
+}
+
+.container-main {
+  width: 100%;
+  height: 1045px;
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") center no-repeat;
 }
 
 .aside-panel {
@@ -135,7 +158,6 @@
 }
 
 .aside-contacts {
-  font-family: "Open Sans Condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -147,11 +169,135 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Open Sans Condensed";
+  color: #FFFF;
 }
 
 .container-page {
   background: rgba(51, 51, 51, 0.85);
   height: 3000px;
+}
+
+.container-main {
+  width: 100%;
+  height: 1045px;
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") center no-repeat;
+}
+
+.section-main {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+}
+
+.about-theater {
+  margin: 390px 125px 0 405px;
+}
+
+.about-theater__text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 87px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about-theater__content {
+  font-family: "Open Sans";
+  margin-top: 50px;
+  width: 535px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.button-poster {
+  margin-top: 50px;
+  width: 160px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: #d1a954;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.theater-poster {
+  margin-top: 200px;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.img-wrapper__poster {
+  position: relative;
+  width: 350px;
+  height: 490px;
+}
+
+.img-background {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 350px;
+  height: 490px;
+  background: linear-gradient(0deg, rgba(209, 169, 84, 0.85), rgba(209, 169, 84, 0.85)), url("../img/poster.jpeg");
+  background-size: 350px 490px;
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 0;
+  margin-top: 55px;
+  width: 375px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.arrows__previous, .arrows__next {
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.arrows__previous--light-grey {
+  fill: #c4c4c4;
+  width: 40px;
+}
+
+.arrows__next--grey {
+  fill: #FFFF;
+  width: 40px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans Condensed";
+  color: #FFFF;
+}
+
+.container-page {
+  background: rgba(51, 51, 51, 0.85);
+  height: 3000px;
+}
+
+.container-main {
+  width: 100%;
+  height: 1045px;
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") center no-repeat;
 }
 
 @media (max-width: 1400px) {
@@ -186,11 +332,6 @@
   .nav-item-tell {
     margin: 0 13% 0 0;
   }
-}
-.container-main {
-  width: 100%;
-  height: 1045px;
-  background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") center no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */

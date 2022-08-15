@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/normalize.css"><!--Чтобы всё было чётко пиксель в пиксель-->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@1,700&display=swap"
+          rel="stylesheet">
     <title>The Big Theater</title>
 </head>
 <body>
@@ -40,6 +42,35 @@
                 </div>
             </div>
         </header>
+
+        <section class="section-main">
+            <section class="about-theater">
+                <h1 class="about-theater__text">Большой театр</h1>
+                <div class="about-theater__content">Большо́й теа́тр — петербургский театр,
+                    существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в
+                    <br>
+                    Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.
+                </div>
+                <a href="#" class="button-poster">афиша</a>
+            </section>
+            <div class="theater-poster">
+                <div class="img-wrapper">
+                    <div class="img-background"></div>
+
+                    <img src="img/poster.jpeg" class="img-wrapper__poster" alt="Афиша Театра"/>
+                </div>
+                <div class="arrows">
+                    <svg class="arrows__previous arrows__previous--light-grey">
+                        <use class="icon-previous" xlink:href="img/sprite.svg#arr-prev"></use>
+                    </svg>
+                    <span class="arrows-text">пред</span>
+                    <span class="arrows-text">след</span>
+                    <svg class="arrows__next arrows__next--grey">
+                        <use class="icon-next" xlink:href="img/sprite.svg#arr-next"></use>
+                    </svg>
+                </div>
+            </div>
+        </section>
     </div>
 
 
@@ -71,24 +102,6 @@
             <div class="aside-contacts">контактная информация</div>
         </div>
     </aside>
-
-
-    <section class="section">
-        <section class="section-main">
-            <section class="about-theater">
-                <h2 class="theater-text"></h2>
-                <div class="theater-content"></div>
-                <button class="button button-poster"></button>
-            </section>
-            <div class="poster-theater">
-                <img src="" alt="">
-                <div class="arrow"></div>
-            </div>
-        </section>
-    </section>
-
-
-
 
 
 </div>
