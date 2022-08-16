@@ -6,13 +6,13 @@
 @import "../inherit";
 
 .section-main {
-  display: grid;
-  grid-template-columns: 5fr 4fr;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 
 .about-theater {
-  margin: 390px 125px 0 405px;
+  margin: 390px 0 0 0;
 }
 
 .about-theater__text {
@@ -26,7 +26,7 @@
 
 .about-theater__content {
   font-family: $font-second;
-  margin-top: 50px;
+  margin: 50px 0 70px 0;
   width: 535px;
   font-weight: 400;
   font-size: 14px;
@@ -35,21 +35,18 @@
 }
 
 .button-poster {
-  margin-top: 50px;
-  width: 160px;
   height: 50px;
+  padding: 20px 50px;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background: $gold;
   border: none;
   cursor: pointer;
   text-decoration: none;
+
 }
 
 
@@ -61,7 +58,6 @@
   position: relative;
 
 }
-
 
 .img-wrapper__poster {
   position: relative;
@@ -87,7 +83,6 @@
   position: relative;
   bottom: 0;
   margin-top: 55px;
-  width: 375px;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;

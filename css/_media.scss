@@ -19,6 +19,10 @@
     margin: 50px 13% 0 0;
   }
 
+  .theater-poster{
+    display: none;
+  }
+
 }
 
 @media (max-width: 992px) {
@@ -28,13 +32,30 @@
 
   .nav{
     margin: 0;
-    justify-content: end;
+    justify-content: space-between;
+    min-width: 95%;
+  }
+  .hamburger{
+    display: flex;
   }
   .nav-item {
     display: none;
   }
   .nav-item-tell{
-    margin: 0 13% 0 0;
+    margin: 0 7% 0 0;
+  }
+
+  .aside-panel{
+    display: none;
   }
 }
 
+@media (max-width: 576px) {
+  .about-theater{
+    width: 90%;
+  }
+  .about-theater__content{
+    width: 100%;
+  }
+
+}
