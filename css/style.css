@@ -41,9 +41,6 @@
   padding-right: 0;
   text-transform: uppercase;
   font-style: normal;
-}
-
-.container {
   color: #FFFF;
 }
 
@@ -212,11 +209,11 @@
   justify-content: space-evenly;
 }
 
-.about-theater {
+.main-page {
   margin: 390px 0 0 0;
 }
 
-.about-theater__text {
+.main-page__text {
   margin: 0;
   font-weight: 700;
   font-size: 64px;
@@ -225,7 +222,7 @@
   text-transform: uppercase;
 }
 
-.about-theater__content {
+.main-page__content {
   font-family: "Open Sans";
   margin: 50px 0 70px 0;
   width: 535px;
@@ -365,11 +362,11 @@
   }
 }
 @media (max-width: 576px) {
-  .about-theater {
+  .main-page {
     width: 90%;
   }
 
-  .about-theater__content {
+  .main-page__content {
     width: 100%;
   }
 }
