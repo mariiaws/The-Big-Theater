@@ -4,3 +4,97 @@
 @import "../variables";
 //Inherit %
 @import "../inherit";
+
+.about-theater {
+  margin-top: 150px;
+}
+
+.about-theater-wrapper {
+  max-width: 1110px;
+}
+
+.about-theater__title {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 100px 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 65px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  .about-theater__title-gold {
+
+    color: $gold;
+  }
+}
+
+.about-theater-text {
+  display: flex;
+
+}
+
+.best-theater__subtitle {
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.best-theater__text {
+  font-family: $font-second;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  width: 410px;
+  margin-right: 30px;
+}
+
+.numbers {
+  display: grid;
+  margin-right: 60px;
+}
+
+.numbers__title {
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.svg-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.icon-furniture {
+  fill: $white;
+}
+
+
+.numbers__seating, .numbers__history {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+
+  .numbers__seating-gold, .numbers__history-gold {
+    color: $gold;
+  }
+}
+
+.img-little-theater {
+  width: 350px;
+  height: 292px;
+}
+
+
+

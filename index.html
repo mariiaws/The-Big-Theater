@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css"><!--Чтобы всё было чётко пиксель в пиксель-->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@1,700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@300;700&display=swap"
           rel="stylesheet">
     <title>The Big Theater</title>
 </head>
@@ -106,38 +106,43 @@
 
     <section class="about-theater">
         <div class="container">
-            <H1 class="about-theater__title">о театре</H1>
-            <div class="about-theater-text">
-                <div class="best-theater">
-                    <div class="best-theater__subtitle">Самый лучший театр СПБ</div>
-                    <div class="best-theater__text">Как свидетельствуют архивные документы, первое каменное здание
-                        Большого театра начали возводить в 1775 году по проекту Антонио Ринальди. В дальнейшем, после
-                        того как Ринальди упал с лесов и не мог лично наблюдать за ходом работ, Екатерина II поручила
-                        немецкому театральному декоратору и архитектору Людвигу Филиппу Тишбейну создать новый проект
-                        театра, который и был воплощён архитекторами Ф. В. фон Бауром и М. А. Деденёвым. Открытие его
-                        состоялось в 1783 году, хотя, основываясь на других свидетельствах, годом открытия можно считать
-                        1784 год.
+            <div class="about-theater-wrapper">
+                <H1 class="about-theater__title">
+                    <span class="about-theater__title-gold">о</span> театре</H1>
+                <div class="about-theater-text">
+                    <div class="best-theater">
+                        <div class="best-theater__subtitle">Самый лучший театр СПБ</div>
+                        <div class="best-theater__text">Как свидетельствуют архивные документы, первое каменное здание
+                            Большого театра начали возводить в 1775 году по проекту Антонио Ринальди. В дальнейшем,
+                            после
+                            того как Ринальди упал с лесов и не мог лично наблюдать за ходом работ, Екатерина II
+                            поручила
+                            немецкому театральному декоратору и архитектору Людвигу Филиппу Тишбейну создать новый
+                            проект
+                            театра, который и был воплощён архитекторами Ф. В. фон Бауром и М. А. Деденёвым. Открытие
+                            его
+                            состоялось в 1783 году, хотя, основываясь на других свидетельствах, годом открытия можно
+                            считать
+                            1784 год.
+                        </div>
                     </div>
+
+                    <div class="numbers">
+                        <span class="numbers__title">немного о цифрах</span>
+                        <div class="numbers__chair">
+                            <svg class="svg-icon">
+                                <use class="icon-furniture" xlink:href="img/sprite.svg#chair"></use>
+                            </svg>
+                        </div>
+                        <span class="numbers__seating"><span class="numbers__seating-gold">1600</span> посадочный мест</span>
+                        <img src="img/stage.svg" alt="Иконка сцены" class="numbers__stage">
+
+                        <span class="numbers__history"><span class="numbers__history-gold">350</span> лет истории</span>
+                    </div>
+
+                    <img src="img/photo-theater.jpeg" class="img-little-theater" alt="Маленькое фото театра"/>
+
                 </div>
-
-                <div class="numbers">
-                    <span class="numbers__title">немного о цифрах</span>
-                    <div class="numbers__chair">
-                        <svg class="svg-icon">
-                            <use class="icon-furniture" xlink:href="img/sprite.svg#chair"></use>
-                        </svg>
-                    </div>
-                    <span class="numbers__seating">1600 посадочный мест</span>
-                    <div class="numbers__stage">
-                        <svg class="svg-icon">
-                            <use class="icon-furniture" xlink:href="img/sprite.svg#stage"></use>
-                        </svg>
-                    </div>
-                    <span class="numbers__history">350 лет истории</span>
-                </div>
-
-                <img src="img/photo-theater.jpeg" class="img-theater" alt="Маленькое фото театра"/>
-
             </div>
         </div>
     </section>
