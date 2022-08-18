@@ -9,10 +9,6 @@
   margin-top: 150px;
 }
 
-.about-theater-wrapper {
-  max-width: 1110px;
-}
-
 .about-theater__title {
   display: flex;
   justify-content: center;
@@ -51,7 +47,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  width: 410px;
+  width: 382px;
   margin-right: 30px;
 }
 
@@ -61,13 +57,17 @@
 }
 
 .numbers__title {
-  margin-bottom: 40px;
+  //margin-bottom: 40px;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
   line-height: 29px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.numbers-wrapper {
+  display: grid;
 }
 
 .svg-icon {
@@ -79,6 +79,9 @@
   fill: $white;
 }
 
+.numbers__chair {
+  display: grid;
+}
 
 .numbers__seating, .numbers__history {
   font-weight: 700;
@@ -89,6 +92,10 @@
   .numbers__seating-gold, .numbers__history-gold {
     color: $gold;
   }
+}
+
+.numbers__stage {
+  display: grid;
 }
 
 .img-little-theater {

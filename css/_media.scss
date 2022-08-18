@@ -19,43 +19,93 @@
     margin: 50px 13% 0 0;
   }
 
-  .theater-poster{
+  .theater-poster {
     display: none;
   }
 
+  .img-little-theater {
+    display: none;
+  }
+
+  .numbers {
+    margin: 0;
+  }
 }
 
 @media (max-width: 992px) {
-  .header-wrapper{
+  .header-wrapper {
     justify-content: end;
   }
 
-  .nav{
+  .nav {
     margin: 0;
     justify-content: space-between;
     min-width: 95%;
   }
-  .hamburger{
+  .hamburger {
     display: flex;
   }
   .nav-item {
     display: none;
   }
-  .nav-item-tell{
+  .nav-item-tell {
     margin: 0 7% 0 0;
   }
 
-  .aside-panel{
+  .aside-panel {
     display: none;
   }
 }
 
+@media (max-width: 768px) {
+  .about-theater-text {
+    display: grid;
+    justify-items: center;
+  }
+
+  .best-theater {
+    margin-bottom: 30px;
+    text-align: center;
+
+  }
+  .best-theater__text {
+    margin: 0;
+    width: 506px;
+  }
+
+  .numbers__title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .numbers-wrapper {
+    display: flex;
+  }
+  .numbers__chair {
+    margin-right: 60px;
+
+  }
+
+  .numbers__seating, .numbers__history {
+    margin-top: 15px;
+  }
+
+}
+
 @media (max-width: 576px) {
-  .main-page{
+  .main-page {
     width: 90%;
   }
-  .main-page__content{
+  .main-page__content {
     width: 100%;
+  }
+
+  .best-theater__text {
+    width: 100%;
+  }
+
+  .about-theater-wrapper {
+    width: 90%;
   }
 
 }
