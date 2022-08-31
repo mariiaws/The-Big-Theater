@@ -10,6 +10,7 @@
 }
 
 .about-theater__title {
+  font-family: $font-main;
   display: flex;
   justify-content: center;
   margin: 0 0 100px 0;
@@ -19,6 +20,8 @@
   line-height: 65px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  text-align: center;
+
 
   .about-theater__title-gold {
 

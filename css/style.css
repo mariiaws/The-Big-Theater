@@ -6,7 +6,7 @@
 
 .container-page {
   background: #333333;
-  height: 3000px;
+  height: 4440px;
 }
 
 .container {
@@ -28,7 +28,7 @@
 
 .container-page {
   background: #333333;
-  height: 3000px;
+  height: 4440px;
 }
 
 .container {
@@ -128,7 +128,7 @@
 
 .container-page {
   background: #333333;
-  height: 3000px;
+  height: 4440px;
 }
 
 .container {
@@ -211,7 +211,7 @@
 
 .container-page {
   background: #333333;
-  height: 3000px;
+  height: 4440px;
 }
 
 .container {
@@ -327,7 +327,7 @@
 
 .container-page {
   background: #333333;
-  height: 3000px;
+  height: 4440px;
 }
 
 .container {
@@ -346,6 +346,7 @@
 }
 
 .about-theater__title {
+  font-family: "Open Sans Condensed";
   display: flex;
   justify-content: center;
   margin: 0 0 100px 0;
@@ -355,6 +356,7 @@
   line-height: 65px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  text-align: center;
 }
 .about-theater__title .about-theater__title-gold {
   color: #D1A954;
@@ -442,7 +444,7 @@
 
 .container-page {
   background: #333333;
-  height: 3000px;
+  height: 4440px;
 }
 
 .container {
@@ -463,6 +465,7 @@
 .our-productions__title {
   margin: 0;
   font-weight: 300;
+  font-style: normal;
   font-size: 48px;
   line-height: 65px;
   text-align: center;
@@ -561,7 +564,100 @@
 
 .container-page {
   background: #333333;
-  height: 3000px;
+  height: 4440px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container-main {
+  width: 100%;
+  height: 1045px;
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") no-repeat top center;
+}
+
+.reward {
+  margin-top: 150px;
+}
+
+.reward-wrapper {
+  position: relative;
+  margin: auto;
+  width: 1140px;
+  height: 600px;
+}
+
+.reward-wrapper-img {
+  position: absolute;
+  width: 1110px;
+  height: 550px;
+}
+
+.reward-wrapper-img:after {
+  content: "";
+  position: absolute;
+  width: 1110px;
+  height: 550px;
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.9));
+}
+
+.img-theater {
+  position: absolute;
+  width: 1110px;
+  height: 550px;
+}
+
+.reward-wrapper-img__years {
+  position: absolute;
+  top: 140px;
+  left: 200px;
+  width: 160px;
+  height: fit-content;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #D1A954;
+}
+
+.stars {
+  position: absolute;
+  top: 190px;
+  left: 490px;
+  letter-spacing: 22px;
+}
+.stars .star-icon {
+  width: 26px;
+  height: 24px;
+}
+.stars .star-icon .icon-previous {
+  fill: #D1A954;
+}
+
+.reward-wrapper-img__text {
+  font-family: "Open Sans";
+  position: absolute;
+  top: 250px;
+  right: 250px;
+  width: 425px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans Condensed";
+  color: #FFFF;
+}
+
+.container-page {
+  background: #333333;
+  height: 4440px;
 }
 
 .container {
