@@ -30,6 +30,19 @@
   .numbers {
     margin: 0;
   }
+
+  .rewards-wrapper {
+    width: 100%;
+  }
+  .rewards-img:after {
+    width: 100%;
+  }
+
+  .img-theater {
+    width: 100%;
+  }
+
+
 }
 
 @media (max-width: 992px) {
@@ -54,6 +67,10 @@
 
   .aside-panel {
     display: none;
+  }
+
+  .img-theater {
+    object-fit: cover;
   }
 }
 
@@ -90,11 +107,31 @@
     margin-top: 15px;
   }
 
+  .rewards-wrapper__years {
+    left: 10%;
+    font-size: 50px;
+    line-height: 70px;
+    top: 168px;
+    width: 120px;
+  }
+
+  .stars {
+    top: 33%;
+    left: 35%;
+  }
+
+  .rewards-wrapper__text {
+    top: 240px;
+    left: 35%;
+    font-size: 25px;
+    width: 300px;
+  }
+
 }
 
 @media (max-width: 576px) {
   .main-page {
-    width: 90%;
+    width: 95%;
   }
   .main-page__content {
     width: 100%;
@@ -107,5 +144,27 @@
   .about-theater-wrapper {
     width: 90%;
   }
+
+.rewards-wrapper__years{
+  left: 5%;
+  font-size: 40px;
+  line-height: 50px;
+  top: 168px;
+  width: 83px;
+}
+
+.stars{
+  top: 28%;
+  left: 35%;
+  letter-spacing: 15px;
+
+}
+
+.rewards-wrapper__text{
+  top: 205px;
+  left: 35%;
+  font-size: 20px;
+  width: 200px;
+}
 
 }
