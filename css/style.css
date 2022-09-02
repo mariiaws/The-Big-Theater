@@ -684,7 +684,7 @@
   color: #D1A954;
 }
 
-.partners-img {
+.partners-promo {
   display: grid;
   justify-items: center;
 }
@@ -788,6 +788,14 @@
   .img-theater {
     object-fit: cover;
   }
+
+  .partners-img__wrapper {
+    grid-gap: 16px;
+  }
+
+  .partners-img {
+    width: 150px;
+  }
 }
 @media (max-width: 768px) {
   .about-theater-text {
@@ -841,6 +849,10 @@
     font-size: 25px;
     width: 300px;
   }
+
+  .partners-img__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media (max-width: 576px) {
   .main-page {
@@ -878,6 +890,14 @@
     left: 35%;
     font-size: 20px;
     width: 200px;
+  }
+
+  .partners-title {
+    font-size: 50px;
+  }
+
+  .partners-img {
+    width: 100px;
   }
 }
 
