@@ -73,7 +73,11 @@
     object-fit: cover;
   }
 
-  .partners-img__wrapper {
+  .partners-promo {
+    margin-top: 40px;
+  }
+
+  .partners-promo__wrapper {
     grid-gap: 16px;
   }
 
@@ -135,7 +139,7 @@
     width: 300px;
   }
 
-  .partners-img__wrapper {
+  .partners-promo__wrapper {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -180,7 +184,7 @@
   }
 
   .partners-title {
-    font-size: 50px;
+    font-size: 35px;
   }
   .partners-img {
     width: 100px;
