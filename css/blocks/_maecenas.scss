@@ -1,0 +1,129 @@
+//Connecting basic settings
+@import "../settings";
+//Variables $
+@import "../variables";
+//Наследование %
+@import "../inherit";
+
+.maecenas {
+  display: grid;
+  justify-items: center;
+  margin-top: 120px;
+}
+
+.maecenas-title {
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 65px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  .maecenas-title__gold {
+    color: $gold;
+  }
+}
+
+.maecenas-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+
+.contacts {
+  display: grid;
+  grid-template-rows: 20px 20px 20px 20px;
+  grid-template-columns: 400px;
+  grid-row-gap: 25px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+
+.form-message {
+  display: grid;
+  grid-template-columns: 380px 310px;
+  grid-template-rows: 90px;
+  grid-gap: 20px;
+  justify-items: end;
+}
+
+.form-label {
+  display: grid;
+  grid-template-columns: 180px 180px;
+  grid-template-rows: 35px 35px;
+  grid-gap: 20px;
+
+}
+
+.form-label__input-name, .form-label__input-company, .form-label__input-email, .form-label__input-tel {
+  font-family: $font-second;
+  padding-left: 15px;
+  background: #444444;
+  border: 1px solid #616161;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  outline: none;
+
+}
+
+.form-label__input-name:focus{
+  border: 1px solid $black;
+
+}
+
+.form-label__input-company:focus {
+  border: 1px solid $black;
+
+}
+
+.form-label__input-email:focus {
+  border: 1px solid $black;
+
+}
+
+.form-label__input-tel:focus {
+  border: 1px solid $black;
+
+}
+
+.form-message__textarea {
+  font-family: $font-second;
+  padding: 10px 0 0 15px;
+  width: 310px;
+  background: #444444;
+  border: 1px solid #616161;
+  resize: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  outline: none;
+
+}
+
+.form-message__textarea:focus {
+  border: 1px solid $black;
+}
+
+
+
+.notice-privacy {
+  font-family: $font-second;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: $medium-grey;
+}
+
+.form-message__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+}

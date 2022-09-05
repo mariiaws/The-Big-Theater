@@ -55,7 +55,7 @@
                     <br>
                     Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.
                 </div>
-                <a href="#" class="button-poster">афиша</a>
+                <a href="#" class="button button-poster">афиша</a>
             </section>
             <div class="theater-poster">
                 <div class="img-wrapper">
@@ -256,16 +256,23 @@
 
             <div class="form">
                 <form action="#" class="form-message" method="post">
-                    <label for="" class="form-label">
-                        <input type="text" class="form-label__input-name" placeholder="Имя" required minlength="4">
+
+                    <label class="form-label">
+                        <input type="text" class="form-label__input-name" placeholder="Имя" required minlength="4"
+                               autocomplete="on">
                         <input type="text" class="form-label__input-company" placeholder="Компания">
-                        <input type="tel" class="form-label__input-tel" placeholder="Телефон">
-                        <input type="email" class="form-label__input-email" placeholder="E-mail">
-                        <textarea name="massage" id="" cols="30" rows="10" class="form-label__textarea" placeholder="Сообщение"></textarea>
-                        <span class="notice-privacy">* Ваши данные не будут переданы третьим лицам, 100% вероятность.
+
+                        <input type="tel" class="form-label__input-tel" placeholder="Телефон" autocomplete="off">
+                        <input type="email" class="form-label__input-email" placeholder="E-mail"></label>
+
+                    <textarea name="massage" class="form-message__textarea"
+                              placeholder="Сообщение"></textarea>
+
+
+                    <span class="notice-privacy">* Ваши данные не будут переданы третьим лицам, 100% вероятность.
                             Конфиденциальность мы гарантируем, и защищаем персональные данные согласно законку ФЗ-52.</span>
-                        <button class="form-label__button">Отправить</button>
-                    </label>
+                    <button class="button form-message__button">Отправить</button>
+
                 </form>
 
             </div>
