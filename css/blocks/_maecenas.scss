@@ -6,9 +6,10 @@
 @import "../inherit";
 
 .maecenas {
-  display: grid;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
   margin-top: 120px;
+  flex-direction: column;
 }
 
 .maecenas-title {
@@ -26,53 +27,61 @@
 
 .maecenas-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap-reverse;
   margin-top: 100px;
 }
 
 
 .contacts {
   display: grid;
-  grid-template-rows: 20px 20px 20px 20px;
-  grid-template-columns: 400px;
-  grid-row-gap: 25px;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+
 }
+
+
+
 
 
 .form-message {
-  display: grid;
-  grid-template-columns: 380px 310px;
-  grid-template-rows: 90px;
-  grid-gap: 20px;
-  justify-items: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 720px;
 }
 
 .form-label {
-  display: grid;
-  grid-template-columns: 180px 180px;
-  grid-template-rows: 35px 35px;
-  grid-gap: 20px;
+  display: flex;
+  justify-content: space-between;
 
+}
+
+.form-label-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
 }
 
 .form-label__input-name, .form-label__input-company, .form-label__input-email, .form-label__input-tel {
   font-family: $font-second;
   padding-left: 15px;
-  background: #444444;
-  border: 1px solid #616161;
+  min-width: 180px;
+  height: 35px;
   font-weight: 600;
   font-size: 12px;
   line-height: 150%;
   outline: none;
+  background: #444444;
+  border: 1px solid #616161;
 
 }
 
-.form-label__input-name:focus{
+.form-label__input-name:focus {
   border: 1px solid $black;
 
 }
@@ -111,10 +120,15 @@
   border: 1px solid $black;
 }
 
-
+.form-send {
+  display: flex;
+justify-content: space-between;
+  margin-top: 60px;
+}
 
 .notice-privacy {
   font-family: $font-second;
+  max-width: 55%;
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
