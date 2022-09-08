@@ -42,7 +42,6 @@
     width: 100%;
   }
 
-
 }
 
 @media (max-width: 992px) {
@@ -85,17 +84,21 @@
     width: 150px;
   }
 
+  .maecenas-wrapper {
+    justify-content: center;
+    max-width: 70%;
+  }
+
   .contacts {
     margin-top: 80px;
     display: grid;
     grid-template:
      "tel-1 em em" 40px
      "tel-2 addr addr" 40px
-    /1fr 3fr 1fr;
+    /1fr 3.1fr 1fr;
     justify-items: end;
 
   }
-
 
   .telephone-first {
     grid-area: tel-1;
@@ -113,6 +116,12 @@
     grid-area: addr;
   }
 
+  .form-label-input {
+    margin-right: 10px;
+  }
+  .right-reserved {
+    margin-right: 0;
+  }
 
 }
 
@@ -172,12 +181,10 @@
   .partners-promo__wrapper {
     grid-template-columns: 1fr 1fr;
   }
-  .maecenas {
-    align-items: center;
-  }
 
   .maecenas-wrapper {
     width: 90%;
+    margin: 100px auto 0 auto;
   }
 
   .form-label {
@@ -186,6 +193,7 @@
 
   .form-label-input {
     width: 47%;
+    margin: 0;
   }
 
   .form-label__input-name, .form-label__input-company, .form-label__input-email, .form-label__input-tel {
@@ -255,6 +263,9 @@
   .partners-img {
     width: 100px;
   }
+  .form-label-input {
+    margin: 0;
+  }
 
   .contacts {
     grid-template:
@@ -264,5 +275,10 @@
         "addr" 40px
         /1fr;
     justify-items: center;
+  }
+
+  .footer-wrapper__bottom {
+    flex-direction: column;
+    align-items: center;
   }
 }

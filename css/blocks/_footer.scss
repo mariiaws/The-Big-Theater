@@ -1,0 +1,39 @@
+//Connecting basic settings
+@import "../settings";
+//Variables $
+@import "../variables";
+//Наследование %
+@import "../inherit";
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 70%;
+
+}
+
+.footer-wrapper__bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 0 20px 0;
+
+}
+
+.right-reserved {
+  margin-right: 590px;
+}
+
+.right-reserved, .developer-design {
+  font-family: $font-second;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: $medium-grey;
+}
