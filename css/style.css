@@ -981,6 +981,10 @@
     margin: 0 7% 0 0;
   }
 
+  .hamburger {
+    cursor: pointer;
+  }
+
   .aside-panel {
     display: none;
   }
