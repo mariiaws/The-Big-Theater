@@ -18,26 +18,35 @@
 
 }
 
-
 .header-wrapper {
   display: flex;
   justify-content: center;
 }
 
 .nav {
-  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  display: flex;
   min-width: 1000px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  list-style: none;
+
 }
 
 .hamburger {
   display: none;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.hamburger-wrapper{
+  display: flex;
+  justify-content: space-between;
+  min-width: 85%;
+  padding: 0;
+  list-style: none;
+
 }
 
 .line-top {
@@ -56,9 +65,13 @@
 .line-top, .line-middle, .line-bottom {
   height: 3px;
   background: $white;
+  transition: transform 0.5s;
 
 }
 
+.social-network-hamburger{
+  display: none;
+}
 
 .nav-item__link {
   text-decoration: none;

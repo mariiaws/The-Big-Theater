@@ -8,7 +8,7 @@
 @media (max-width: 1400px) {
 
   .nav {
-    min-width: 730px;
+    min-width: 70%;
     justify-content: space-around;
     margin-left: 13%;
   }
@@ -16,7 +16,7 @@
     flex-basis: 100px;
   }
   .nav-item-tell {
-    margin: 50px 13% 0 0;
+    margin: 50px 12% 0 0;
   }
 
   .theater-poster {
@@ -54,22 +54,119 @@
     justify-content: space-between;
     min-width: 95%;
   }
+
+  .nav-open {
+    justify-content: end;
+  }
+
   .hamburger {
     display: flex;
+    cursor: pointer;
+    z-index: 20;
+
   }
-  .nav-item {
+
+  .button-hamburger {
+    position: fixed;
+    left: 245px;
+
+  }
+
+  .line-top-animate {
+    position: relative;
+    top: 4px;
+    width: 33px;
+    transition: transform cubic-bezier(0.26, -0.01, 1, 1) 0.5s;
+    transform: rotate(140deg);
+  }
+
+  .line-middle-animate {
     display: none;
   }
+
+  .line-bottom-animate {
+    width: 33px;
+    transition: transform cubic-bezier(0.26, -0.01, 1, 1) 0.5s;
+    transform: rotate(42deg);
+
+  }
+
+  .hamburger-wrapper {
+    display: none;
+    //transition: transform 0.5s;
+  }
+
+  .hamburger-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 300px;
+    padding: 0;
+    background: $grey;
+    z-index: 18;
+    //transition: transform cubic-bezier(0.26, -0.01, 1, 1) 0.5s;
+
+
+  }
+  .nav-item {
+    display: flex;
+    margin-left: 40px;
+  }
+
+  .nav-item-main {
+    margin-top: 140px;
+  }
+
+  .nav-item-contacts {
+    flex-basis: 0;
+  }
+
+  .social-network-hamburger {
+    display: flex;
+    justify-content: end;
+    margin-top: 90px;
+    width: 100%;
+    flex-wrap: wrap;
+
+  }
+
+  .social-network-hamburger__link {
+    flex-basis: 40%;
+    margin-bottom: 20px;
+  }
+
+  .social-network-hamburger-icon {
+    width: 45px;
+    height: 45px;
+    transform: none;
+
+    .icon, .icon-inst {
+      fill: $white;
+    }
+
+  }
+
+  .icon-fb {
+    order: -1;
+  }
+
+  .icon-inst {
+    order: 2;
+  }
+  .icon-yt {
+    order: 3;
+  }
+  .icon-vk {
+    order: 4;
+  }
+
   .nav-item-tell {
     margin: 0 7% 0 0;
   }
-
-  .hamburger {
-    cursor: pointer;
-  }
-
-
-
 
   .aside-panel {
     display: none;
