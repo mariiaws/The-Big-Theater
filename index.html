@@ -74,7 +74,7 @@
         </header>
 
         <section class="section-main">
-            <section class="main-page">
+            <div class="main-page">
                 <h1 class="main-page__text">Большой театр</h1>
                 <div class="main-page__content">Большо́й теа́тр — петербургский театр,
                     существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в
@@ -82,22 +82,32 @@
                     Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.
                 </div>
                 <a href="#" class="button button-poster">афиша</a>
-            </section>
+            </div>
             <div class="theater-poster">
-                <div class="img-wrapper">
-                    <div class="img-background"></div>
-                    <img src="img/poster.jpeg" class="img-wrapper__poster" alt="Афиша Театра"/>
+                <div class="slider">
+                    <div class="slider-wrapper">
+                        <div class="img-wrapper">
+                            <div class="img-background"></div>
+                            <div class="img-wrapper__la-scala"></div>
+                        </div>
+                    </div>
+                    <div class="arrows">
+                        <div class="arrows-previous">
+                            <svg class="svg-previous svg-previous--light-grey">
+                                <use class="icon-previous" xlink:href="img/sprite.svg#arr-prev"></use>
+                            </svg>
+                            <span class="arrows-text">пред</span>
+                        </div>
+
+                        <div class="arrows-next">
+                            <span class="arrows-text">след</span>
+                            <svg class="svg-next svg-next--grey">
+                                <use class="icon-next" xlink:href="img/sprite.svg#arr-next"></use>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
-                <div class="arrows">
-                    <svg class="arrows__previous arrows__previous--light-grey">
-                        <use class="icon-previous" xlink:href="img/sprite.svg#arr-prev"></use>
-                    </svg>
-                    <span class="arrows-text">пред</span>
-                    <span class="arrows-text">след</span>
-                    <svg class="arrows__next arrows__next--grey">
-                        <use class="icon-next" xlink:href="img/sprite.svg#arr-next"></use>
-                    </svg>
-                </div>
+
             </div>
         </section>
     </div>
@@ -170,16 +180,13 @@
                             </div>
                         </div>
                     </div>
-
                     <img src="img/photo-theater.jpeg" class="img-little-theater" alt="Маленькое фото театра"/>
-
                 </div>
             </div>
         </div>
     </section>
 
-    <!--<section class="our-productions">
-        <div class="container">
+    <section class="our-productions">
             <section class="our-productions-wrapper">
                 <h1 class="our-productions__title"><span class="our-productions__title-gold">наши</span> постановки</h1>
 
@@ -218,8 +225,7 @@
 
                 </div>
             </section>
-        </div>
-    </section>-->
+    </section>
 
     <section class="rewards">
         <div class="rewards-wrapper">
