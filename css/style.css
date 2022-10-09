@@ -522,9 +522,17 @@
 .our-productions__img {
   display: flex;
   justify-content: end;
-  position: relative;
   margin-top: 100px;
-  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  position: relative;
+}
+
+.carousel-wrapper {
+  display: flex;
+  position: relative;
 }
 
 .our-productions__img-gradient {

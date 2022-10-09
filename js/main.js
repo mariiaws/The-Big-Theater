@@ -43,7 +43,7 @@ function sliderZIndex() {
     });
 
     document.querySelector(".arrows-next").addEventListener("click", function () {
-
+console.log("click");
         if (laScala >= 10) {
             laScala = document.querySelector(".img-wrapper__la-scala").style.zIndex = "8";
 
