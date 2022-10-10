@@ -30,17 +30,22 @@
   display: flex;
   justify-content: end;
   margin-top: 100px;
-  height: 550px;
-  position: relative;
-  overflow: hidden;
 
 }
 
 .carousel {
-  display: flex;
-  position: absolute;
+  position: relative;
+  width: 1760px;
+  height: 550px;
+  overflow: hidden;
 
 }
+
+.carousel-wrapper{
+  display: flex;
+  position: absolute;
+}
+
 
 
 .our-productions__img-gradient {

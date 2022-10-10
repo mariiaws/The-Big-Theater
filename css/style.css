@@ -523,12 +523,16 @@
   display: flex;
   justify-content: end;
   margin-top: 100px;
-  height: 550px;
-  position: relative;
-  overflow: hidden;
 }
 
 .carousel {
+  position: relative;
+  width: 1760px;
+  height: 550px;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
   display: flex;
   position: absolute;
 }
@@ -997,9 +1001,8 @@
   }
 
   .our-productions__img {
-    max-width: 80%;
     justify-content: start;
-    margin: 100px auto 0 auto;
+    margin: 100px 80px 0 auto;
   }
 
   .rewards-wrapper {

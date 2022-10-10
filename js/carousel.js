@@ -1,7 +1,9 @@
 "use strict";
 
-let carousel = document.querySelector(".carousel");
+let carousel = document.querySelector(".carousel-wrapper");
 
+
+//let carouselWrapper = document.querySelector(".carousel-wrapper");
 
 carousel.onmousedown = function (event) {
 
@@ -30,14 +32,12 @@ carousel.onmousedown = function (event) {
     };
 
 
-    if (carousel.onmousedown){
+    if (carousel.onmousedown) {
         carousel.onmouseout = function () {
             document.removeEventListener('mousemove', onMouseMove);
             carousel.onmouseup = null;
         }
     }
-
-
 
 
     carousel.ondragstart = function () {
