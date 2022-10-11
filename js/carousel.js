@@ -2,9 +2,6 @@
 
 let carousel = document.querySelector(".carousel-wrapper");
 
-
-//let carouselWrapper = document.querySelector(".carousel-wrapper");
-
 carousel.onmousedown = function (event) {
 
     let shiftX = event.clientX - carousel.getBoundingClientRect().left;
@@ -31,7 +28,7 @@ carousel.onmousedown = function (event) {
 
     };
 
-
+    //отпускает карусель когда выходит за пределы
     if (carousel.onmousedown) {
         carousel.onmouseout = function () {
             document.removeEventListener('mousemove', onMouseMove);
@@ -39,45 +36,9 @@ carousel.onmousedown = function (event) {
         }
     }
 
-
     carousel.ondragstart = function () {
         return false;
     };
-
-
-    /*       document.addEventListener("mouseup", onMouseUp);
-
-           function onMouseUp () {
-
-               adjustBallCoords();
-               document.removeEventListener("mousemove", moveAt);
-               document.removeEventListener("mouseup", onMouseUp);
-
-               function adjustBallCoords () {
-
-                   let coords = ball.getBoundingClientRect();
-                   let left;
-                   let top;
-                   let clientWidth = document.documentElement.clientWidth;
-                   let clientHeight = document.documentElement.clientHeight;
-
-                   if (coords.left < 0) {
-                       left = 0;
-                   } else if (coords.right > clientWidth) {
-                       left = clientWidth - coords.width;
-                   }
-
-                   if (coords.top < 0) {
-                       top = 0;
-                   } else if (coords.bottom > clientHeight) {
-                       top = clientHeight - coords.height;
-                   }
-
-                   ball.style.left = left + "px";
-                   //ball.style.top = top + "px";
-               }
-           }*/
-
 
 };
 

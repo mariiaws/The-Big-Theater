@@ -30,7 +30,7 @@
   display: flex;
   justify-content: end;
   margin-top: 100px;
-
+  user-select: none;
 }
 
 .carousel {
@@ -41,11 +41,10 @@
 
 }
 
-.carousel-wrapper{
+.carousel-wrapper {
   display: flex;
   position: absolute;
 }
-
 
 
 .our-productions__img-gradient {
@@ -74,7 +73,7 @@
 .our-productions__img-gradient:hover:after {
   content: "";
   width: 24%;
-  height: 18%;
+  height: 20%;
   margin: -26px 0 0 -26px;
   position: absolute;
   top: 50%;

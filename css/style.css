@@ -203,7 +203,7 @@
 .aside-line {
   width: 80px;
   height: 3px;
-  background: #c4c4c4;
+  background: #5b5959;
 }
 
 .aside-contacts {
@@ -213,7 +213,7 @@
   line-height: 25px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #c4c4c4;
+  color: #5b5959;
 }
 
 * {
@@ -523,6 +523,7 @@
   display: flex;
   justify-content: end;
   margin-top: 100px;
+  user-select: none;
 }
 
 .carousel {
@@ -560,7 +561,7 @@
 .our-productions__img-gradient:hover:after {
   content: "";
   width: 24%;
-  height: 18%;
+  height: 20%;
   margin: -26px 0 0 -26px;
   position: absolute;
   top: 50%;
@@ -1223,6 +1224,10 @@
 
   .numbers__seating, .numbers__history {
     margin-top: 15px;
+  }
+
+  .our-productions__img {
+    margin: 100px 20px 0 auto;
   }
 
   .rewards-wrapper__years {
