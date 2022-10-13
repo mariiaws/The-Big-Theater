@@ -42,18 +42,18 @@ carousel.onmousedown = function (event) {
 
 };
 
+let backgroundLoupeOne = document.querySelector(".background-loupe-one");
+let backgroundLoupeTwo = document.querySelector(".background-loupe-two");
+let backgroundLoupeThree = document.querySelector(".background-loupe-three");
+let backgroundLoupeFour = document.querySelector(".background-loupe-four");
+
+let loupe = document.querySelectorAll(".loupe-one, .loupe-two, .loupe-three, .loupe-four");
+let loupeOne = document.querySelector(".loupe-one");
+let loupeTwo = document.querySelector(".loupe-two");
+let loupeThree = document.querySelector(".loupe-three");
+let loupeFour = document.querySelector(".loupe-four");
+
 function hoverLoupe() {
-    let backgroundLoupeOne = document.querySelector(".background-loupe-one");
-    let backgroundLoupeTwo = document.querySelector(".background-loupe-two");
-    let backgroundLoupeThree = document.querySelector(".background-loupe-three");
-    let backgroundLoupeFour = document.querySelector(".background-loupe-four");
-
-    let loupe = document.querySelectorAll(".loupe-one, .loupe-two, .loupe-three, .loupe-four");
-    let loupeOne = document.querySelector(".loupe-one");
-    let loupeTwo = document.querySelector(".loupe-two");
-    let loupeThree = document.querySelector(".loupe-three");
-    let loupeFour = document.querySelector(".loupe-four");
-
 
     loupe.forEach(item => {
         item.style.display = "none";
@@ -76,6 +76,7 @@ function hoverLoupe() {
             loupeFour.style.display = "flex";
         }
     }
+
     showLoupe();
 
     function hideLoupe() {
@@ -95,7 +96,53 @@ function hoverLoupe() {
             loupeFour.style.display = "none"
         }
     }
+
     hideLoupe();
 }
 
 hoverLoupe();
+
+
+loupeThree.addEventListener("click", function () {
+    console.log("click");
+
+    function createWindowImg() {
+        let winDialog = document.createElement("div");
+        winDialog.className = "window-dialog";
+        winDialog.innerHTML = " <div class=\"window-background\"></div>\n" +
+            "        <span class=\"button-close\"></span>\n" +
+            "        <div class=\"window-dialog-wrapper\">\n" +
+            "        <img src=\"img/golden-gramophone.png\" class=\"window-image\" height=\"600\" width=\"443\" alt=\"Золотой граммофон\"/>\n" +
+            "        </div>\n" +
+            "    </div>";
+
+        document.body.append(winDialog);
+
+    }
+
+    createWindowImg();
+
+})
+
+
+loupeFour.addEventListener("click", function () {
+
+
+    let winDialog = document.createElement("div");
+    winDialog.className = "window-dialog";
+    winDialog.innerHTML = " <div class=\"window-background\"></div>\n" +
+        " <span class=\"button-close\"></span>\n" +
+        " <div class=\"window-dialog-wrapper\">\n" +
+        " <img src=\"img/nutcracker.png\" height=\"600\" width=\"443\" class=\"window-image\" alt=\"Щелкунчик\"/>\n" +
+        " </div>\n" +
+        " </div>";
+
+    document.body.append(winDialog);
+
+    let winBack = document.querySelector(".window-dialog");
+    winBack.addEventListener("click", () => winDialog.remove());
+
+
+})
+
+

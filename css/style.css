@@ -203,7 +203,7 @@
 .aside-line {
   width: 80px;
   height: 3px;
-  background: #5b5959;
+  background: #c4c4c4;
 }
 
 .aside-contacts {
@@ -213,7 +213,7 @@
   line-height: 25px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #5b5959;
+  color: #c4c4c4;
 }
 
 * {
@@ -535,7 +535,6 @@
 
 .carousel-wrapper {
   display: flex;
-  position: absolute;
 }
 
 .our-productions__img-gradient {
@@ -563,11 +562,11 @@
   height: 21.1%;
   margin: -26px 0 0 -26px;
   position: absolute;
-  top: 50%;
-  left: 45%;
-  clip-path: circle(50%);
+  top: 45%;
+  left: 43%;
+  clip-path: circle(45%);
   background: url("../img/magnfire.svg") 50% 50% no-repeat #D1A954;
-  z-index: 5;
+  z-index: 30;
 }
 
 .our-productions-info-all {
@@ -608,6 +607,49 @@
   width: 440px;
   height: 550px;
   object-fit: cover;
+}
+
+.window-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 25;
+}
+
+.window-background {
+  background: #1d1a1a;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.button-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  --weight: 1px;
+  --aa: 1px;
+  /* anti-aliasing */
+  --color: #a7a0a0;
+  border-radius: 3px;
+  z-index: 30;
+  background: linear-gradient(45deg, transparent calc(50% - var(--weight) - var(--aa)), var(--color) calc(50% - var(--weight)), var(--color) calc(50% + var(--weight)), transparent calc(50% + var(--weight) + var(--aa))), linear-gradient(-45deg, transparent calc(50% - var(--weight) - var(--aa)), var(--color) calc(50% - var(--weight)), var(--color) calc(50% + var(--weight)), transparent calc(50% + var(--weight) + var(--aa)));
+}
+
+.window-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 * {
