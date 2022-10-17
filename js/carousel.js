@@ -43,6 +43,20 @@ carousel.onmousedown = function (event) {
 };
 
 
+let carouselMain = document.querySelector(".carousel");
+
+carousel.ontouchstart = function () {
+
+    console.log("ontouchmove");
+
+    carouselMain.style.overflow = "scroll";
+}
+
+
+
+
+
+
 let backgroundLoupeOne = document.querySelector(".background-loupe-one");
 let backgroundLoupeTwo = document.querySelector(".background-loupe-two");
 let backgroundLoupeThree = document.querySelector(".background-loupe-three");
