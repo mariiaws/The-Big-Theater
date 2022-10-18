@@ -50,11 +50,9 @@ carousel.ontouchstart = function () {
     console.log("ontouchmove");
 
     carouselMain.style.overflow = "scroll";
+    carouselMain.style.overflowY = "hidden";
+
 }
-
-
-
-
 
 
 let backgroundLoupeOne = document.querySelector(".background-loupe-one");

@@ -529,8 +529,13 @@
 .carousel {
   position: relative;
   width: 1760px;
-  height: 550px;
+  height: 570px;
   overflow: hidden;
+}
+
+.carousel::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .carousel-wrapper {
@@ -1347,22 +1352,34 @@
     width: 90%;
   }
 
+  .img-theater {
+    height: 365px;
+  }
+
+  .rewards-img:after {
+    height: 100%;
+  }
+
+  .rewards-wrapper {
+    height: 370px;
+  }
+
   .rewards-wrapper__years {
     left: 5%;
     font-size: 40px;
-    line-height: 50px;
-    top: 168px;
+    line-height: 70px;
+    top: 80px;
     width: 83px;
   }
 
   .stars {
-    top: 28%;
+    top: 30%;
     left: 35%;
     letter-spacing: 15px;
   }
 
   .rewards-wrapper__text {
-    top: 205px;
+    top: 140px;
     left: 35%;
     font-size: 20px;
     width: 200px;

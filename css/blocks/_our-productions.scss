@@ -36,10 +36,16 @@
 .carousel {
   position: relative;
   width: 1760px;
-  height: 550px;
+  height: 570px;
   overflow: hidden;
 
 }
+
+.carousel::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 
 .carousel-wrapper {
   display: flex;
@@ -117,13 +123,11 @@
 
 }
 
-
 .oscar-2020, .general-staff, .nutcracker, .golden-gramophone {
   width: 440px;
   height: 550px;
   object-fit: cover;
 }
-
 
 .window-dialog {
   position: fixed;
