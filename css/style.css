@@ -120,7 +120,7 @@
 }
 
 .nav-item-tell {
-  border-bottom: 2px solid #D1A954;
+  border-bottom: 2px solid #d1a954;
 }
 
 .nav-item-tell__link {
@@ -197,7 +197,7 @@
 }
 
 .icon-inst {
-  fill: #D1A954;
+  fill: #d1a954;
 }
 
 .aside-line {
@@ -273,7 +273,7 @@
   line-height: 25px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  background: #D1A954;
+  background: #d1a954;
   border: none;
   cursor: pointer;
   text-decoration: none;
@@ -402,7 +402,7 @@
   text-align: center;
 }
 .about-theater__title .about-theater__title-gold {
-  color: #D1A954;
+  color: #d1a954;
 }
 
 .about-theater-text {
@@ -467,7 +467,7 @@
   letter-spacing: 0.05em;
 }
 .numbers__seating .numbers__seating-gold, .numbers__seating .numbers__history-gold, .numbers__history .numbers__seating-gold, .numbers__history .numbers__history-gold {
-  color: #D1A954;
+  color: #d1a954;
 }
 
 .numbers__stage {
@@ -516,7 +516,7 @@
   text-transform: uppercase;
 }
 .our-productions__title .our-productions__title-gold {
-  color: #D1A954;
+  color: #d1a954;
 }
 
 .our-productions__img {
@@ -570,7 +570,7 @@
   top: 45%;
   left: 43%;
   clip-path: circle(45%);
-  background: url("../img/magnfire.svg") 50% 50% no-repeat #D1A954;
+  background: url("../img/magnfire.svg") 50% 50% no-repeat #d1a954;
 }
 
 .our-productions-info-all {
@@ -716,7 +716,7 @@
   line-height: 98px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #D1A954;
+  color: #d1a954;
 }
 
 .stars {
@@ -730,7 +730,7 @@
   height: 24px;
 }
 .stars .star-icon .icon-previous {
-  fill: #D1A954;
+  fill: #d1a954;
 }
 
 .rewards-wrapper__text {
@@ -781,7 +781,7 @@
   text-transform: uppercase;
 }
 .partners-title .partners-title__gold {
-  color: #D1A954;
+  color: #d1a954;
 }
 
 .partners-promo {
@@ -834,7 +834,7 @@
   text-transform: uppercase;
 }
 .maecenas-title .maecenas-title__gold {
-  color: #D1A954;
+  color: #d1a954;
 }
 
 .maecenas-wrapper {
@@ -890,19 +890,19 @@
 }
 
 .form-label__input-name:focus {
-  border: 1px solid #000;
+  border: 1px solid #d1a954;
 }
 
 .form-label__input-company:focus {
-  border: 1px solid #000;
+  border: 1px solid #d1a954;
 }
 
 .form-label__input-email:focus {
-  border: 1px solid #000;
+  border: 1px solid #d1a954;
 }
 
 .form-label__input-tel:focus {
-  border: 1px solid #000;
+  border: 1px solid #d1a954;
 }
 
 .form-message__textarea {
@@ -920,7 +920,7 @@
 }
 
 .form-message__textarea:focus {
-  border: 1px solid #000;
+  border: 1px solid #d1a954;
 }
 
 .form-send {
