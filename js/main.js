@@ -95,12 +95,13 @@ function checkTell() {
                 if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
                 if (event.type == "blur" && this.value.length < 5) this.value = "";//ничего не ввёл и ушёл с элемента, тогда в поле ввода пусто
 
-                tell.onblur = tell.style.border = "";
+                tell.onchange = function () {
+                    if (new_value.length < 18) {
+                        tell.style.border = "1px solid #ff0000";
 
-                if (new_value.length < 18) {
-                    tell.style.border = "1px solid #ff0000";
+                    } else tell.style.border = "";
 
-                } else tell.style.border = "";
+                }
 
 
             }
