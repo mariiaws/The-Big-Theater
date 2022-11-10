@@ -64,8 +64,18 @@ let tell = form.elements.tel;
 let mail = form.elements.email;
 let btn = form.elements.btn;
 
-let re = /^[a-zA-Zа-яА-Я'][a-zA-Zа-яА-Я-']+[a-zA-Zа-яА-Я']?$/u;
-let telReg = "^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$";
+function checkName() {
+    name.onchange = function () {
+        let regexp = /^[a-zA-Zа-яА-Я'][a-zA-Zа-яА-Я-' ]+[a-zA-Zа-яА-Я']?$/u;
+
+        if (name.value.match(regexp) != null){
+            name.style.border = "";
+        }else name.style.border = "1px solid #ff0000";
+
+    }
+
+}
+
 
 
 function checkTell() {
@@ -118,22 +128,40 @@ function checkTell() {
 
 }
 
-checkTell()
 
 
-function email() {
-    let dog;
-    mail.onblur = mail.style.border = "";
-    dog = mail.value.includes("@");
+function checkMail() {
+    mail.onchange = function () {
+        let regexp = /[-.\w]+@([\w-]+\.)+[\w-]+/g;
+        if (regexp.test(mail.value) == true) {
+            mail.style.border = "";
+        } else {
+            mail.style.border = "1px solid #ff0000";
 
-    if (!dog) {
-        mail.style.border = "1px solid #ff0000";
-    } else mail.style.border = "";
+        }
 
-
+    }
 }
 
-email()
+checkName()
+checkTell()
+checkMail()
 
-btn.addEventListener("click", (event) => event.preventDefault())
+
+btn.addEventListener("click", (event) => event.preventDefault());
+
+/*btn.addEventListener("click", function (event) {
+
+
+})*/
+
+
+
+form.keydown = function (event) {
+    if (event.keyCode == 13) {
+        event.preventDefault();
+        return false;
+    }
+}
+
 
