@@ -64,7 +64,6 @@ let tel = form.elements.tel;
 let mail = form.elements.email;
 let btn = form.elements.btn;
 
-let new_value;
 
 window.addEventListener("DOMContentLoaded", function () {
     [].forEach.call(document.querySelectorAll(".form-label__input-tel"), function (input) {
@@ -73,13 +72,13 @@ window.addEventListener("DOMContentLoaded", function () {
         function mask(event) {
             event.keyCode && (keyCode = event.keyCode);
 
-            let matrix = "+7 (___)-___-__-__",
-                i = 0,
+            let matrix = "+7 (___)-___-__-__";
+            let i = 0,
                 def = matrix.replace(/\D/g, ""),
-                val = this.value.replace(/\D/g, "");
-            new_value = matrix.replace(/[_\d]/g, function (a) {
-                return i < val.length ? val.charAt(i++) || def.charAt(i) : a //ищет и заменяет
-            });
+                val = this.value.replace(/\D/g, ""),
+                new_value = matrix.replace(/[_\d]/g, function (a) {
+                    return i < val.length ? val.charAt(i++) || def.charAt(i) : a //ищет и заменяет
+                });
             i = new_value.indexOf("_");
             if (i != -1) { //тут убираются чёрточки у маски
                 i < 5 && (i = 3);
@@ -94,6 +93,17 @@ window.addEventListener("DOMContentLoaded", function () {
             if (event.type == "blur" && this.value.length < 5) this.value = "";//ничего не ввёл и ушёл с элемента, тогда в поле ввода пусто
 
 
+            btn.onclick = function (send) {
+                if (new_value.length < 18) {
+                    tel.style.border = "1px solid #ff0000";
+                    send.preventDefault();
+                } else {
+                    tel.style.border = "";
+
+                }
+            }
+
+
         }
 
         input.addEventListener("input", mask, false);
@@ -105,12 +115,6 @@ window.addEventListener("DOMContentLoaded", function () {
 
 });
 
-form.keydown = function (event) {
-    if (event.keyCode == 13) {
-        event.preventDefault();
-        return false;
-    }
-}
 
 btn.addEventListener("click", function (send) {
 
@@ -126,14 +130,15 @@ btn.addEventListener("click", function (send) {
     }
 
     function checkTel() {
-        if (new_value.length < 18) {
+        if (tel.value == "") {
             tel.style.border = "1px solid #ff0000";
             send.preventDefault()
 
-        } else {
-            tel.style.border = "";
-        }
+        } //else tel.style.border = "";
+
     }
+
+    checkTel()
 
     function checkMail() {
         let regexp = /[-.\w]+@([\w-]+\.)+[\w-]+/g;
@@ -149,10 +154,14 @@ btn.addEventListener("click", function (send) {
 
     checkName()
     checkMail()
-    checkTel()
+
 
 })
 
 
-
+form.addEventListener("keydown", function (event) {
+    if (event.keyCode == 13) {
+        event.preventDefault();
+    }
+});
 
