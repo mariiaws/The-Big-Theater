@@ -20,6 +20,24 @@
   background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") no-repeat top center;
 }
 
+.button:hover {
+  color: #000;
+  background: #FFFF;
+}
+
+.button:active {
+  color: #565656;
+  background: #444444;
+}
+
+.icon:hover {
+  fill: #000;
+}
+
+.icon-inst:hover {
+  fill: #000;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Open Sans Condensed";
@@ -40,6 +58,24 @@
   width: 100%;
   height: 1045px;
   background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") no-repeat top center;
+}
+
+.button:hover {
+  color: #000;
+  background: #FFFF;
+}
+
+.button:active {
+  color: #565656;
+  background: #444444;
+}
+
+.icon:hover {
+  fill: #000;
+}
+
+.icon-inst:hover {
+  fill: #000;
 }
 
 .header {
@@ -115,6 +151,10 @@
   color: #FFFF;
 }
 
+.nav-item__link:hover {
+  color: #000;
+}
+
 .nav-item-contacts {
   flex-basis: 263px;
 }
@@ -131,6 +171,10 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #FFFF;
+}
+
+.nav-item-tell__link:hover {
+  color: #000;
 }
 
 * {
@@ -153,6 +197,24 @@
   width: 100%;
   height: 1045px;
   background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") no-repeat top center;
+}
+
+.button:hover {
+  color: #000;
+  background: #FFFF;
+}
+
+.button:active {
+  color: #565656;
+  background: #444444;
+}
+
+.icon:hover {
+  fill: #000;
+}
+
+.icon-inst:hover {
+  fill: #000;
 }
 
 .aside-panel {
@@ -191,7 +253,7 @@
 }
 
 .icon {
-  fill: rgba(255, 255, 255, 0.6);
+  fill: #FFFF;
   width: 26px;
   height: 26px;
 }
@@ -236,6 +298,24 @@
   width: 100%;
   height: 1045px;
   background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") no-repeat top center;
+}
+
+.button:hover {
+  color: #000;
+  background: #FFFF;
+}
+
+.button:active {
+  color: #565656;
+  background: #444444;
+}
+
+.icon:hover {
+  fill: #000;
+}
+
+.icon-inst:hover {
+  fill: #000;
 }
 
 .section-main {
@@ -328,8 +408,6 @@
   line-height: 25px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
 }
 
 .arrows-previous {
@@ -340,6 +418,10 @@
 .arrows-next {
   display: flex;
   cursor: pointer;
+}
+
+.arrows-text:hover {
+  color: #000;
 }
 
 .svg-previous {
@@ -362,6 +444,14 @@
   width: 40px;
 }
 
+.icon-previous:hover {
+  fill: #000;
+}
+
+.icon-next:hover {
+  fill: #000;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Open Sans Condensed";
@@ -382,6 +472,24 @@
   width: 100%;
   height: 1045px;
   background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") no-repeat top center;
+}
+
+.button:hover {
+  color: #000;
+  background: #FFFF;
+}
+
+.button:active {
+  color: #565656;
+  background: #444444;
+}
+
+.icon:hover {
+  fill: #000;
+}
+
+.icon-inst:hover {
+  fill: #000;
 }
 
 .about-theater {
@@ -499,6 +607,24 @@
   width: 100%;
   height: 1045px;
   background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") no-repeat top center;
+}
+
+.button:hover {
+  color: #000;
+  background: #FFFF;
+}
+
+.button:active {
+  color: #565656;
+  background: #444444;
+}
+
+.icon:hover {
+  fill: #000;
+}
+
+.icon-inst:hover {
+  fill: #000;
 }
 
 .our-productions {
@@ -679,6 +805,24 @@
   background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") no-repeat top center;
 }
 
+.button:hover {
+  color: #000;
+  background: #FFFF;
+}
+
+.button:active {
+  color: #565656;
+  background: #444444;
+}
+
+.icon:hover {
+  fill: #000;
+}
+
+.icon-inst:hover {
+  fill: #000;
+}
+
 .rewards {
   margin-top: 150px;
   display: flex;
@@ -729,7 +873,7 @@
   width: 26px;
   height: 24px;
 }
-.stars .star-icon .icon-previous {
+.stars .star-icon use {
   fill: #d1a954;
 }
 
@@ -765,6 +909,24 @@
   width: 100%;
   height: 1045px;
   background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") no-repeat top center;
+}
+
+.button:hover {
+  color: #000;
+  background: #FFFF;
+}
+
+.button:active {
+  color: #565656;
+  background: #444444;
+}
+
+.icon:hover {
+  fill: #000;
+}
+
+.icon-inst:hover {
+  fill: #000;
 }
 
 .partners {
@@ -819,6 +981,24 @@
   background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") no-repeat top center;
 }
 
+.button:hover {
+  color: #000;
+  background: #FFFF;
+}
+
+.button:active {
+  color: #565656;
+  background: #444444;
+}
+
+.icon:hover {
+  fill: #000;
+}
+
+.icon-inst:hover {
+  fill: #000;
+}
+
 .maecenas {
   display: flex;
   margin-top: 120px;
@@ -857,6 +1037,14 @@
   text-transform: uppercase;
 }
 
+.contacts a:hover {
+  color: black;
+}
+
+.contacts a {
+  text-decoration: none;
+}
+
 .form-message {
   display: flex;
   flex-direction: column;
@@ -867,6 +1055,11 @@
 .form-label {
   display: flex;
   justify-content: space-between;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #FFFF;
+  -webkit-box-shadow: 0 0 0 1000px #444444 inset;
 }
 
 .form-label-input {
@@ -897,11 +1090,11 @@
   border: 1px solid #d1a954;
 }
 
-.form-label__input-email:focus {
+.form-label__input-tel:focus {
   border: 1px solid #d1a954;
 }
 
-.form-label__input-tel:focus {
+.form-label__input-email:focus {
   border: 1px solid #d1a954;
 }
 
@@ -967,6 +1160,24 @@
   background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") no-repeat top center;
 }
 
+.button:hover {
+  color: #000;
+  background: #FFFF;
+}
+
+.button:active {
+  color: #565656;
+  background: #444444;
+}
+
+.icon:hover {
+  fill: #000;
+}
+
+.icon-inst:hover {
+  fill: #000;
+}
+
 .footer {
   display: flex;
   justify-content: center;
@@ -1018,6 +1229,24 @@
   width: 100%;
   height: 1045px;
   background: linear-gradient(0deg, rgba(51, 51, 51, 0.85) 0%, rgba(51, 51, 51, 0.85) 20%), url("../img/background-theater.jpeg") no-repeat top center;
+}
+
+.button:hover {
+  color: #000;
+  background: #FFFF;
+}
+
+.button:active {
+  color: #565656;
+  background: #444444;
+}
+
+.icon:hover {
+  fill: #000;
+}
+
+.icon-inst:hover {
+  fill: #000;
 }
 
 @media (max-width: 1400px) {
@@ -1157,7 +1386,8 @@
     height: 45px;
     transform: none;
   }
-  .social-network-hamburger-icon .icon, .social-network-hamburger-icon .icon-inst {
+
+  .icon-inst {
     fill: #FFFF;
   }
 
@@ -1400,6 +1630,16 @@
   .contacts {
     grid-template: "tel-1" 40px "tel-2" 40px "em" 40px "addr" 40px/1fr;
     justify-items: center;
+  }
+
+  .telephone-first {
+    grid-area: tel-1;
+    width: 114.09px;
+  }
+
+  .telephone-second {
+    grid-area: tel-2;
+    width: 114.09px;
   }
 
   .footer-wrapper__bottom {

@@ -59,13 +59,12 @@
     width: 26px;
     height: 24px;
 
-    .icon-previous {
+    use {
       fill: $gold;
     }
   }
 
 }
-
 
 .rewards-wrapper__text {
   font-family: $font-second;

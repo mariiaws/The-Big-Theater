@@ -58,7 +58,6 @@
   min-width: 180%;
 }
 
-
 .img-wrapper {
   position: relative;
   display: flex;
@@ -105,8 +104,6 @@
   line-height: 25px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
 }
 
 .arrows-previous {
@@ -120,6 +117,9 @@
   cursor: pointer;
 }
 
+.arrows-text:hover {
+  color: $black;
+}
 
 .svg-previous {
   margin-right: 20px;
@@ -130,7 +130,6 @@
 .svg-next {
   margin-left: 20px;
   height: 25px;
-
 }
 
 
@@ -144,3 +143,10 @@
   width: 40px;
 }
 
+.icon-previous:hover {
+  fill: $black;
+}
+
+.icon-next:hover {
+  fill: $black;
+}

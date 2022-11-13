@@ -144,12 +144,11 @@
     width: 45px;
     height: 45px;
     transform: none;
-
-    .icon, .icon-inst {
-      fill: $white;
-    }
-
   }
+  .icon-inst {
+    fill: $white;
+  }
+
 
   .icon-fb {
     order: -1;
@@ -227,7 +226,6 @@
   .right-reserved {
     margin-right: 0;
   }
-
 
 }
 
@@ -399,6 +397,15 @@
         "addr" 40px
         /1fr;
     justify-items: center;
+  }
+
+  .telephone-first {
+    grid-area: tel-1;
+    width: 114.09px;
+  }
+  .telephone-second {
+    grid-area: tel-2;
+    width: 114.09px;
   }
 
   .footer-wrapper__bottom {

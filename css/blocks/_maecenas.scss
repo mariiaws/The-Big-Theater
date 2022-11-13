@@ -7,7 +7,6 @@
 
 .maecenas {
   display: flex;
-  //justify-content: center;
   margin-top: 120px;
   flex-direction: column;
 
@@ -45,8 +44,17 @@
   line-height: 22px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+.contacts a:hover{
+  color: black;
+}
+
+.contacts a{
+  text-decoration: none;
 
 }
+
 
 .form-message {
   display: flex;
@@ -59,6 +67,11 @@
   display: flex;
   justify-content: space-between;
 
+}
+
+input:-webkit-autofill{
+  -webkit-text-fill-color: $white;
+  -webkit-box-shadow: 0 0 0 1000px #444444 inset;
 }
 
 .form-label-input {
@@ -91,12 +104,11 @@
   border: 1px solid $gold;
 }
 
-.form-label__input-email:focus {
+.form-label__input-tel:focus {
   border: 1px solid $gold;
-
 }
 
-.form-label__input-tel:focus {
+.form-label__input-email:focus {
   border: 1px solid $gold;
 
 }
@@ -141,3 +153,4 @@
   align-items: center;
   width: 160px;
 }
+

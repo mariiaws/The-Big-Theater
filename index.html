@@ -7,9 +7,7 @@
     <meta http-equiv="pragma" content="no-cache"/>
     <link rel="stylesheet" href="css/normalize.css"><!--Чтобы всё было чётко пиксель в пиксель-->
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
-    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
     <title>The Big Theater</title>
 </head>
@@ -17,6 +15,7 @@
 
 <div class="container-page">
     <div class="container-main">
+
         <header class="header">
             <div class="header-wrapper">
                 <ul class="nav">
@@ -42,8 +41,9 @@
                         <li class="nav-item nav-item-contacts">
                             <a href="#" class="nav-item__link">контакты</a>
                         </li>
+
                         <div class="social-network-hamburger">
-                            <a href="#" class="social-network-hamburger__link social-network-hamburger__icon-yt">
+                            <a href="#" class="social-network-hamburger__link icon-yt">
                                 <svg class="social-network-hamburger-icon">
                                     <use class="icon" xlink:href="img/sprite.svg#yt"></use>
                                 </svg>
@@ -60,14 +60,14 @@
                             </a>
                             <a href="#" class="social-network-hamburger__link">
                                 <svg class="social-network-hamburger-icon">
-                                    <use class="icon-inst" xlink:href="img/sprite.svg#inst"></use>
+                                    <use class="icon icon-inst" xlink:href="img/sprite.svg#inst"></use>
                                 </svg>
                             </a>
                         </div>
 
                     </ul>
                     <li class="nav-item-tell">
-                        <a href="#" class="nav-item-tell__link">+7 495 123-45-67</a>
+                        <a href="tel:+74951234567" class="nav-item-tell__link">+7 495 123-45-67</a>
                     </li>
                 </ul>
             </div>
@@ -96,11 +96,11 @@
                             <svg class="svg-previous svg-previous--light-grey">
                                 <use class="icon-previous" xlink:href="img/sprite.svg#arr-prev"></use>
                             </svg>
-                            <span class="arrows-text">пред</span>
+                            <span class="arrows-text arrows-text--previous">пред</span>
                         </div>
 
                         <div class="arrows-next">
-                            <span class="arrows-text">след</span>
+                            <span class="arrows-text arrows-text--next">след</span>
                             <svg class="svg-next svg-next--grey">
                                 <use class="icon-next" xlink:href="img/sprite.svg#arr-next"></use>
                             </svg>
@@ -231,7 +231,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
     </section>
@@ -245,19 +244,19 @@
             <span class="rewards-wrapper__years">2018 2019 2020</span>
             <div class="stars">
                 <svg class="star-icon">
-                    <use class="icon-previous" xlink:href="img/sprite.svg#star"></use>
+                    <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
                 <svg class="star-icon">
-                    <use class="icon-previous" xlink:href="img/sprite.svg#star"></use>
+                    <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
                 <svg class="star-icon">
-                    <use class="icon-previous" xlink:href="img/sprite.svg#star"></use>
+                    <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
                 <svg class="star-icon">
-                    <use class="icon-previous" xlink:href="img/sprite.svg#star"></use>
+                    <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
                 <svg class="star-icon">
-                    <use class="icon-previous" xlink:href="img/sprite.svg#star"></use>
+                    <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
             </div>
             <span class="rewards-wrapper__text">Лучший театр по мнению театральных критиков Парижа</span>
@@ -289,9 +288,9 @@
         </div>
         <div class="maecenas-wrapper">
             <div class="contacts">
-                <div class="telephone-first">+7 (812) 123-45-55</div>
-                <div class="telephone-second">+7 (812) 123-45-66</div>
-                <div class="email">info@theater.ru</div>
+                <a href="tel:+78121234555" class="telephone-first">+7 (812) 123-45-55</a>
+                <a href="tel:+78121234566" class="telephone-second">+7 (812) 123-45-66</a>
+                <a href="mailto:info@theater.ru" class="email">info@theater.ru</a>
                 <div class="address">г. санкт-петербург, невский 140</div>
             </div>
 
@@ -300,11 +299,12 @@
 
                     <label class="form-label">
                         <label class="form-label-input">
-                            <input type="text" class="form-label__input-name" name="name" placeholder="Имя" required minlength="2">
+                            <input type="text" class="form-label__input-name" name="name" placeholder="Имя" required>
                             <input type="text" class="form-label__input-company" placeholder="Компания"></label>
                         <label class="form-label-input">
                             <input type="tel" class="form-label__input-tel" placeholder="Телефон" name="tel" required>
-                            <input type="email" class="form-label__input-email" placeholder="E-mail" name="email"></label>
+                            <input type="email" class="form-label__input-email" placeholder="E-mail"
+                                   name="email"></label>
 
                         <textarea name="massage" class="form-message__textarea"
                                   placeholder="Сообщение"></textarea>
@@ -312,7 +312,7 @@
                     <div class="form-send">
                         <span class="notice-privacy">* Ваши данные не будут переданы третьим лицам, 100% вероятность.
                             Конфиденциальность мы гарантируем, и защищаем персональные данные согласно закону ФЗ-52.</span>
-                        <button class="button form-message__button"  name="btn">Отправить</button>
+                        <button class="button form-message__button" name="btn">Отправить</button>
                     </div>
                 </form>
             </div>

@@ -83,6 +83,9 @@
   color: $white;
 }
 
+.nav-item__link:hover{
+  color: $black;
+}
 
 .nav-item-contacts {
   flex-basis: 263px;
@@ -100,6 +103,10 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: $white;
+}
+
+.nav-item-tell__link:hover{
+color: $black;
 }
 
 

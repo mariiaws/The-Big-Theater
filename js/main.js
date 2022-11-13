@@ -27,7 +27,7 @@ function animateHamburger() {
 animateHamburger();
 
 
-//slider
+//mini slider
 
 function sliderZIndex() {
     let laScala = document.querySelector(".img-wrapper__la-scala").style.zIndex = "10";
@@ -103,7 +103,6 @@ window.addEventListener("DOMContentLoaded", function () {
                 }
             }
 
-
         }
 
         input.addEventListener("input", mask, false);
@@ -134,7 +133,7 @@ btn.addEventListener("click", function (send) {
             tel.style.border = "1px solid #ff0000";
             send.preventDefault()
 
-        } //else tel.style.border = "";
+        }
 
     }
 
@@ -155,7 +154,6 @@ btn.addEventListener("click", function (send) {
     checkName()
     checkMail()
 
-
 })
 
 
@@ -164,4 +162,5 @@ form.addEventListener("keydown", function (event) {
         event.preventDefault();
     }
 });
+
 

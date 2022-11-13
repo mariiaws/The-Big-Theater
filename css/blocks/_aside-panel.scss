@@ -12,7 +12,7 @@
   left: 0;
   bottom: 0;
   width: 150px;
-  background: $middle-grey;
+  background: rgba(51, 51, 51, 0.75);
   z-index: 10;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .icon {
-  fill: rgba(255, 255, 255, 0.6);
+  fill: $white;
   width: 26px;
   height: 26px;
 
