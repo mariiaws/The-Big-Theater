@@ -1321,7 +1321,7 @@ input:-webkit-autofill {
 
   .line-top-animate {
     position: relative;
-    top: 4px;
+    top: 3.5px;
     width: 33px;
     transition: transform cubic-bezier(0.26, -0.01, 1, 1) 0.5s;
     transform: rotate(140deg);
